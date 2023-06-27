@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react'
 import Homepage from './Pages/Homepage'
+import 'bootstrap/dist/css/bootstrap.css'
 //import './App.css'
 
 function App() {

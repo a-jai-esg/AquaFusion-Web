@@ -4,6 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCar
 // import stylesheets
 import '../App.css'
 import '../stylesheets/main.css'
+import Navbar from '../Components/Navbar';
 
 function Homepage({isLoggedIn, username, profilePicture, }) {
   
@@ -17,6 +18,8 @@ function Homepage({isLoggedIn, username, profilePicture, }) {
 
   return (
     <>
+      <Navbar/>
+      <br/>
       <section className="vh-1000" style={{ backgroundColor: '#f4f5f7' }}>
       <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
