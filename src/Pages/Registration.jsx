@@ -7,7 +7,7 @@ function App() {
   
   useEffect(() => {
     document.title = "Register to AquaFusion";
-  });
+  }, []);
 
   return (
     <>

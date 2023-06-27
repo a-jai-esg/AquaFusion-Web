@@ -1,9 +1,10 @@
 import { useState, useEffect} from 'react'
 import Homepage from './Pages/Homepage'
+import Login from './Pages/Login'
 import 'bootstrap/dist/css/bootstrap.css'
 //import './App.css'
 
-function App() {
+export default function App() {
 
   // we'll integrate axios here to get data from firebase
   useEffect(() => {
@@ -12,9 +13,7 @@ function App() {
 
   return (
     <>
-      <Homepage isLoggedIn={true} username={"Jennie Kim"} profilePicture={"https://cdns-images.dzcdn.net/images/artist/d246561939a0b8000f88d7d59df32f54/500x500.jpg"}/>
+      <Login/> 
     </>
   )
 }
-
-export default App

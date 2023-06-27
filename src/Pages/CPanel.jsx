@@ -7,7 +7,7 @@ function CPanel() {
   
   useEffect(() => {
     document.title = "User CPanel";
-  });
+  }, []);
 
   return (
     <>

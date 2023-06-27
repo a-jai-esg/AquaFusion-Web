@@ -10,7 +10,7 @@ function Homepage({isLoggedIn, username, profilePicture, }) {
   
   useEffect(() => {
     document.title = "AquaFusion: Aquaponics IoT Monitoring System";
-  });
+  }, []);
 
   if(!isLoggedIn){
     alert("Session expired. Please Log in Again.");
