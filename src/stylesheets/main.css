@@ -5,22 +5,27 @@ body {
 }
 
 .gradient-custom {
-  /* fallback for old browsers */
-  background: #f6d365;
-
-  /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(34, 70, 48);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(34, 70, 48, 1) 0%,
+    rgba(28, 43, 129, 1) 40%,
+    rgba(20, 0, 255, 1) 100%
+  );
   background: -webkit-linear-gradient(
-    to right bottom,
-    rgba(246, 211, 101, 1),
-    rgba(253, 160, 133, 1)
+    180deg,
+    rgba(34, 70, 48, 1) 0%,
+    rgba(28, 43, 129, 1) 40%,
+    rgba(20, 0, 255, 1) 100%
   );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(
-    to right bottom,
-    rgba(246, 211, 101, 1),
-    rgba(253, 160, 133, 1)
+    180deg,
+    rgba(34, 70, 48, 1) 0%,
+    rgba(28, 43, 129, 1) 40%,
+    rgba(20, 0, 255, 1) 100%
   );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#224630",endColorstr="#1400ff",GradientType=1);  
+
 }
 
 .image-rounded {

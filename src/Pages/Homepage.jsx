@@ -1,82 +1,95 @@
-import { useState, useEffect} from 'react'
-import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBTypography, MDBIcon } from 'mdb-react-ui-kit';
+import { useState, useEffect } from "react";
 
 // import stylesheets
-import '../App.css'
-import '../stylesheets/main.css'
-import Navbar from '../Components/Navbar';
+import "../stylesheets/App.css";
+import "../stylesheets/main.css";
+import Navbar from "../Components/Navbar";
 
-function Homepage({isLoggedIn, username, profilePicture, }) {
-  
+export default function Homepage({ isLoggedIn, username, profilePicture }) {
   useEffect(() => {
     document.title = "AquaFusion: Aquaponics IoT Monitoring System";
   }, []);
 
-  if(!isLoggedIn){
-    alert("Session expired. Please Log in Again.");
-  }
-
   return (
     <>
-      <Navbar/>
-      <br/>
-      <section className="vh-1000" style={{ backgroundColor: '#f4f5f7' }}>
-      <MDBContainer className="py-5 h-100">
-        <MDBRow className="justify-content-center align-items-center h-100">
-          <MDBCol lg="6" className="mb-4 mb-lg-0">
-            <MDBCard className="mb-3" style={{ borderRadius: '.5rem' }}>
-              <MDBRow className="g-0">
-                <MDBCol md="4" className="gradient-custom text-center text-white"
-                  style={{ borderTopLeftRadius: '.5rem', borderBottomLeftRadius: '.5rem' }}>
-                  <MDBCardImage src={profilePicture} alt="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                  className="my-5 image-rounded" style={{ width: '100px' }} fluid />
-                  <MDBTypography tag="h5">{username}</MDBTypography>
-                  <MDBCardText>Web Designer</MDBCardText>
-                  <MDBIcon far icon="edit mb-5" />
-                </MDBCol>
-                <MDBCol md="8">
-                  <MDBCardBody className="p-4">
-                    <MDBTypography tag="h6">Information</MDBTypography>
-                    <hr className="mt-0 mb-4" />
-                    <MDBRow className="pt-1">
-                      <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Email</MDBTypography>
-                        <MDBCardText className="text-muted">info@example.com</MDBCardText>
-                      </MDBCol>
-                      <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Phone</MDBTypography>
-                        <MDBCardText className="text-muted">123 456 789</MDBCardText>
-                      </MDBCol>
-                    </MDBRow>
-
-                    <MDBTypography tag="h6">Information</MDBTypography>
-                    <hr className="mt-0 mb-4" />
-                    <MDBRow className="pt-1">
-                      <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Email</MDBTypography>
-                        <MDBCardText className="text-muted">info@example.com</MDBCardText>
-                      </MDBCol>
-                      <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Phone</MDBTypography>
-                        <MDBCardText className="text-muted">123 456 789</MDBCardText>
-                      </MDBCol>
-                    </MDBRow>
-
-                    <div className="d-flex justify-content-start">
-                      <a href="#!"><MDBIcon fab icon="facebook me-3" size="lg" /></a>
-                      <a href="#!"><MDBIcon fab icon="twitter me-3" size="lg" /></a>
-                      <a href="#!"><MDBIcon fab icon="instagram me-3" size="lg" /></a>
-                    </div>
-                  </MDBCardBody>
-                </MDBCol>
-              </MDBRow>
-            </MDBCard>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-    </section>    
+      <Navbar />
+      <form className="registration-dialog row g-3">
+        <div className="icon-area" align="center">
+          <h1 className="h3 mb-3 font-weight-normal">Account Registration</h1>
+        </div>
+        <div className="col-md-6">
+          <label for="inputEmail" className="form-label">
+            Email
+          </label>
+          <input type="email" className="form-control" id="inputEmail" />
+        </div>
+        <div className="col-md-6">
+          <label for="inputPassword" className="form-label">
+            Password
+          </label>
+          <input type="password" className="form-control" id="inputPassword" />
+        </div>
+        <div className="col-12">
+          <label for="inputName" className="form-label">
+            Complete Name
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="inputName"
+            placeholder="Juana Dela Cruz"
+          />
+        </div>
+        <div className="col-12">
+          <label for="inputAddress" className="form-label">
+            House/Mailing Address
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="inputAddress"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div className="col-md-6">
+          <label for="inputCity" className="form-label">
+            City
+          </label>
+          <input type="text" className="form-control" id="inputCity" />
+        </div>
+        <div className="col-md-4">
+          <label for="inputBarangay" className="form-label">
+            Barangay
+          </label>
+          <select id="inputBarangay" className="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div className="col-md-2">
+          <label for="inputZip" className="form-label">
+            Zip
+          </label>
+          <input type="text" className="form-control" id="inputZip" />
+        </div>
+        <div className="col-12">
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="gridCheck"
+            />
+            <label className="form-check-label" for="gridCheck">
+              I agree to the terms and conditions.
+            </label>
+          </div>
+        </div>
+        <div className="col-12">
+          <button type="submit" className="btn btn-submit btn-primary">
+            Register!
+          </button>
+        </div>
+      </form>
     </>
-  )
+  );
 }
-
-export default Homepage

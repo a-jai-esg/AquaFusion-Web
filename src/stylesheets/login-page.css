@@ -1,14 +1,37 @@
 @import url("https://fonts.cdnfonts.com/css/d-din");
 
+/* for login dialogs */
 .root-color-override {
   font-family: "D-DIN", sans-serif;
-  max-width: 1280px;
+  width: inherit;
+  padding: 3em;
+  margin-top: 100px;
   margin: 0 auto;
-  padding: 2.6rem 5rem;
   border-radius: 5%;
   text-align: center;
   background-color: rgb(233, 234, 240);
 }
+
+.login-dialog{
+  align-items: center;
+  background-color: #c8f7f2; 
+  padding: 3em;
+  margin-top: 100px;
+  max-width: 600px;
+  margin-bottom: auto;
+  border-radius: 10px;
+} 
+
+.override{
+  display: flex;
+  width: 1500px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+}
+
+/*end for login dialogs*/
 
 .align-to-right {
   text-align: right;

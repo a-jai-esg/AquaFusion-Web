@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import "../App.css";
+import "../stylesheets/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "../stylesheets/login-page.css";
-import AquaFusionLogo from "../Pictures/logo_image.png";
-import AquaFusionLogoTitle from "../Pictures/logo_title.png";
+import AquaFusionLogo from "../assets/logo_image.png";
+import AquaFusionLogoTitle from "../assets/logo_title.png";
 
-function Login() {
+export default function Login() {
   useEffect(() => {
     document.title = "Login to AquaFusion";
   }, []);
@@ -51,7 +51,7 @@ function Login() {
 
   return (
     <>
-      <div className="root-color-override">
+      <div className="override">
         <form className="form-signin login-dialog">
           {imageResourcesAttribs.map((data) => {
             return (
@@ -114,5 +114,3 @@ function Login() {
     </>
   );
 }
-
-export default Login;
