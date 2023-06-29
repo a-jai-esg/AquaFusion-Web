@@ -1,0 +1,99 @@
+#root{
+  max-width: auto;
+  margin: 0 auto;
+  padding: 2.5rem;
+  align-items: center ;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  border-style: none;
+}
+
+#inputEmail, #inputPassword, #inputPassword,
+#inputName, #inputAddress, #inputCity, #inputBarangay, #inputZip{
+  font-weight: 300;
+  color: #333;
+}
+
+.icon-area{
+  padding-bottom: 6pt;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.btn.btn-submit{
+  margin-top: 26.5px;
+  width: 100%;
+  height: 85%;
+  font-size: 14pt;
+  color: #fffcd5;
+}
+
+.btn.btn-submit:hover{
+  font-weight: bolder;
+}
+
+.form-group{
+  padding: 2.5px;
+}
+
+.navbar-extended{
+  background-color: #c8f7f2; 
+  max-width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+
+
+.registration-dialog{
+  background-color: #c8f7f2; 
+  padding: 3em;
+  max-width: 1000px;
+  margin-left: 50%;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: auto;
+  border-radius: 10px;
+}
+
+.navbar-element-pad{
+  padding-left: 10px;
+}
