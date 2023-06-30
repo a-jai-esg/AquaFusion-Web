@@ -1,24 +1,17 @@
+@import url("https://fonts.cdnfonts.com/css/d-din");
+
 #root{
-  max-width: auto;
+  font-family: 'D-DIN Exp', sans-serif;
   margin: 0 auto;
   padding: 2.5rem;
   align-items: center ;
-  text-align: center;
-  font-family: Roboto;
-  font-weight: 500;
-  border-style: none;
-}
-
-#inputEmail, #inputPassword, #inputPassword,
-#inputName, #inputAddress, #inputCity, #inputBarangay, #inputZip{
-  font-weight: 300;
-  color: #333;
+  text-align: left;
+  font-weight: 400; 
 }
 
 .icon-area{
   padding-bottom: 6pt;
 }
-
 
 .logo {
   height: 6em;
@@ -57,11 +50,10 @@
 }
 
 .btn.btn-submit{
-  margin-top: 26.5px;
+  margin-top: 10px;
   width: 100%;
-  height: 85%;
-  font-size: 14pt;
-  color: #fffcd5;
+  height: 100%;
+  font-size: 18pt;
 }
 
 .btn.btn-submit:hover{
@@ -70,30 +62,4 @@
 
 .form-group{
   padding: 2.5px;
-}
-
-.navbar-extended{
-  background-color: #c8f7f2; 
-  max-width: 100%;
-  padding: 1em;
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 100px;
-}
-
-
-
-.registration-dialog{
-  background-color: #c8f7f2; 
-  padding: 3em;
-  max-width: 1000px;
-  margin-left: 50%;
-  margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: auto;
-  border-radius: 10px;
-}
-
-.navbar-element-pad{
-  padding-left: 10px;
 }

@@ -46,7 +46,13 @@
   background-color: #c8f7f2;
   background-size: cover;
   max-width: 100%;
+  padding: 1em;
   align-items: center;
   border-radius: 10px;
   margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.navbar-element-pad{
+  padding-left: 10px;
 }

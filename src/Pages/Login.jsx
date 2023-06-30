@@ -51,7 +51,7 @@ export default function Login() {
 
   return (
     <>
-      <div className="override">
+      <div className="override-login">
         <form className="form-signin login-dialog">
           {imageResourcesAttribs.map((data) => {
             return (
@@ -67,7 +67,7 @@ export default function Login() {
             );
           })}
 
-          <h1 className="subheader-login mb-3 font-weight-normal">WELCOME</h1>
+          <h1 className="subheader-login mb-3 font-weight-normal">ADMIN LOGIN</h1>
 
           {formAttribs.map((data) => {
             return (

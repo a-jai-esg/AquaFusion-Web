@@ -1,8 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
-
+  align-items: center;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,27 +13,27 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-
-  background: rgb(34, 70, 48);
+  
+  background: rgb(178, 250, 214);
   background: -moz-linear-gradient(
     180deg,
-    rgba(34, 70, 48, 1) 0%,
-    rgba(28, 43, 129, 1) 40%,
-    rgba(20, 0, 255, 1) 100%
+    rgba(178, 250, 214, 1) 0%,
+    rgba(178, 250, 214, 1) 35%,
+    rgba(0, 188, 248, 1) 100%
   );
   background: -webkit-linear-gradient(
     180deg,
-    rgba(34, 70, 48, 1) 0%,
-    rgba(28, 43, 129, 1) 40%,
-    rgba(20, 0, 255, 1) 100%
+    rgba(178, 250, 214, 1) 0%,
+    rgba(178, 250, 214, 1) 35%,
+    rgba(0, 188, 248, 1) 100%
   );
   background: linear-gradient(
     180deg,
-    rgba(34, 70, 48, 1) 0%,
-    rgba(28, 43, 129, 1) 40%,
-    rgba(20, 0, 255, 1) 100%
+    rgba(178, 250, 214, 1) 0%,
+    rgba(178, 250, 214, 1) 35%,
+    rgba(0, 188, 248, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#224630",endColorstr="#1400ff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2fad6",endColorstr="#00bcf8",GradientType=1);
 }
 
 a {
@@ -45,25 +43,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,4 +57,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
